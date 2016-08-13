@@ -3,38 +3,298 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>jQuery+Mobile+Bootstrap手机模板主题</title>
+        <title>活力猿</title>
         <link rel="stylesheet" href="themes/Bootstrap.css">
         <link rel="stylesheet" href="css/jquery.mobile.css" />
         <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile.js"></script>
+        <script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
     </head>
     <body>
         <div data-role="page" data-theme="a">
             <div data-role="header" data-position="inline">
-                <h1>jQuery Mobile Bootstrap Theme</h1>
+                <h1>欢迎来到活力猿</h1>
+
+<!--
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
-                        <li><a href="buttons.html" data-icon="star">Buttons</a></li>
-                        <li><a href="listviews.html" data-icon="grid">Lists</a></li>
-                        <li><a href="nav.html" data-icon="search">Nav</a></li>
-                        <li><a href="forms.html" data-icon="gear">Forms</a></li>
+                        <li><a href="index.html" data-icon="home" class="ui-btn-active">主页</a></li>
+                        <li><a href="buttons.html" data-icon="star">运动场馆</a></li>
+                        <li><a href="listviews.html" data-icon="grid">运动商城</a></li>
+                        <li><a href="nav.html" data-icon="search">社区</a></li>
+                        <li><a href="forms.html" data-icon="gear">个人中心</a></li>
                     </ul>
                 </div>
+-->
             </div>
             <div data-role="content" data-theme="a">
 
-                <a href="https://github.com/commadelimited/jQuery-Mobile-Bootstrap-Theme" data-role="button" data-icon="star">Get the code</a>
-
-                <h2>Overview</h2>
-
-                <p>
-                    The jQuery Mobile Bootstrap theme is meant to duplicate the appearance of <a href="http://twbs.github.io/bootstrap/">Bootstrap</a> within the context of a jQuery Mobile application. Currently only the colors are mimiced, but eventually some of the components might also work their way into the theme.
-                </p>
-
-            </div>
+                <h2>最新动态</h2>
+ 
+                <div class="panel-heading" id="googleMap" style="width:500px;height:380px;"></div>
+                 	<div class="content">
+                        
+	  		<ul class="nav-head" id="nav-head">
+	  			<li class="active"><a href="#">已发布链接<span>170</span></a></li>
+	  			<li><a href="#">草稿箱<span>8</span></a></li>
+	  			<li><a href="#">断货通知<span class="text-red">+2</span></a></li>
+	  			<div style="clear:both"></div>
+	  		</ul>
+	  		<!--已发布内容-->
+	  		<div class="content-text1">
+		  		<div class="content-text">
+		  			<div class="clear">
+			  			<div class="fl content-img">
+			  				<img src="images/c-1.jpg" width="100" height="100" alt="" />
+			  			</div>
+			  			<div class="fl m-head">
+			  				<div class="content-text-head clear">
+			  					<span class="fl name">布丁面膜5</span>
+			  					<span class="fr time">2:06pm</span>
+			  				</div>
+			  				<p>为什么要买小苏洁面粉</p>
+			  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+			  			</div>
+		  			</div>
+		  			<div class="content-footer">
+		  				<a href="#" class="delete">删除</a><a href="#" class="b-right">查看数据</a><a href="#" class="copy">复制链接</a>
+		  			</div>
+		  		</div>
+		  		<div class="content-text">
+		  			<div class="clear">
+			  			<div class="fl content-img">
+			  				<img src="images/c-2.jpg" width="100" height="100" alt="" />
+			  			</div>
+			  			<div class="fl m-head">
+			  				<div class="content-text-head clear">
+			  					<span class="fl name">布丁面膜5</span>
+			  					<span class="fr time">2:06pm</span>
+			  				</div>
+			  				<p>为什么要买小苏洁面粉</p>
+			  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+			  			</div>
+		  			</div>
+		  			<div class="content-footer">
+		  				<a href="#" class="delete">删除</a><a href="#" class="b-right">查看数据</a><a href="#" class="copy">复制链接</a>
+		  			</div>
+		  		</div>
+		  		<div class="content-text">
+		  			<div class="clear">
+			  			<div class="fl content-img">
+			  				<img src="images/c-3.jpg" width="100" height="100" alt="" />
+			  			</div>
+			  			<div class="fl m-head">
+			  				<div class="content-text-head clear">
+			  					<span class="fl name">布丁面膜5</span>
+			  					<span class="fr time">2:06pm</span>
+			  				</div>
+			  				<p>为什么要买小苏洁面粉</p>
+			  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+			  			</div>
+		  			</div>
+		  			<div class="content-footer">
+		  				<a href="#" class="delete">删除</a><a href="#" class="b-right">查看数据</a><a href="#" class="copy">复制链接</a>
+		  			</div>
+		  		</div>
+		  		<div class="content-text">
+		  			<div class="clear">
+			  			<div class="fl content-img">
+			  				<img src="images/c-2.jpg" width="100" height="100" alt="" />
+			  			</div>
+			  			<div class="fl m-head">
+			  				<div class="content-text-head clear">
+			  					<span class="fl name">布丁面膜5</span>
+			  					<span class="fr time">2:06pm</span>
+			  				</div>
+			  				<p>为什么要买小苏洁面粉</p>
+			  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+			  			</div>
+		  			</div>
+		  			<div class="content-footer">
+		  				<a href="#" class="delete">删除</a><a href="#" class="b-right">查看数据</a><a href="#" class="copy">复制链接</a>
+		  			</div>
+		  		</div>	
+		  		<div class="xianshi"><a href="#">在显示25条</a></div>
+	  		</div>
+	  		<!--end 已发布内容-->
+	  		<!--草稿箱-->
+	  		<div class="content-text1" style="display:none">
+	  			<!--已发布-->
+	  			<div class="fabu">
+	  				<h3><a href="#">已发布商品</a></h3>
+	  				<div class="content-text">
+			  			<div class="clear">
+				  			<div class="fl content-img">
+				  				<img src="images/c-2.jpg" width="100" height="100" alt="" />
+				  			</div>
+				  			<div class="fl m-head">
+				  				<div class="content-text-head clear">
+				  					<span class="fl name">布丁面膜5</span>
+				  					<span class="fr time">2:06pm</span>
+				  				</div>
+				  				<p>为什么要买小苏洁面粉</p>
+				  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+				  			</div>
+			  			</div>
+			  		</div>
+	  			</div>
+	  			<!--未发布-->
+	  			<div class="no-fabu">
+		  				<h3><a href="#">未发布商品</a></h3>
+		  				<div class="content-text">
+				  			<div class="clear">
+					  			<div class="fl content-img">
+					  				<img src="images/c-2.jpg" width="100" height="100" alt="" />
+					  			</div>
+					  			<div class="fl m-head">
+					  				<div class="content-text-head clear">
+					  					<span class="fl name">布丁面膜5</span>
+					  					<span class="fr time">2:06pm</span>
+					  				</div>
+					  				<p>为什么要买小苏洁面粉</p>
+					  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+					  			</div>
+					  			<div class="content-side"><a href="#">原创</a></div>
+				  			</div>
+				  		</div>
+				  		<div class="content-text">
+				  			<div class="clear">
+					  			<div class="fl content-img">
+					  				<img src="images/c-2.jpg" width="100" height="100" alt="" />
+					  			</div>
+					  			<div class="fl m-head">
+					  				<div class="content-text-head clear">
+					  					<span class="fl name">布丁面膜5</span>
+					  					<span class="fr time">2:06pm</span>
+					  				</div>
+					  				<p>为什么要买小苏洁面粉</p>
+					  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+					  			</div>
+					  			<div class="content-side"><a href="#">代理</a></div>
+				  			</div>
+				  		</div>
+				  		<div class="content-text">
+				  			<div class="clear">
+					  			<div class="fl content-img">
+					  				<img src="images/c-2.jpg" width="100" height="100" alt="" />
+					  			</div>
+					  			<div class="fl m-head">
+					  				<div class="content-text-head clear">
+					  					<span class="fl name">布丁面膜5</span>
+					  					<span class="fr time">2:06pm</span>
+					  				</div>
+					  				<p>为什么要买小苏洁面粉</p>
+					  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+					  			</div>
+					  			<div class="content-side"><a href="#">代理</a></div>
+				  			</div>
+				  		</div>
+	  			</div>
+	  			<!--end 未发布-->
+	  		</div>
+	  		<!--end 草稿箱-->
+	  		<!--断货通知-->
+	  		<div class="content-text1"  style="display:none">
+	  			<div class="tongzhi-text">以下为供货商不再供货的商品，每条通知将保留1个月。对这些商品的访问将跳转至您最新发布或代理的商品。</div>
+	  			<!--新通知-->
+	  			<div class="new-tz">
+		  			<h3><a href="#">新通知</a></h3>
+		  			<div class="content-text">
+			  			<div class="clear">
+				  			<div class="fl content-img">
+				  				<img src="images/c-1.jpg" width="100" height="100" alt="" />
+				  			</div>
+				  			<div class="fl m-head">
+				  				<div class="content-text-head clear">
+				  					<span class="fl name">布丁面膜5</span>
+				  					<span class="fr time">2015/03/26</span>
+				  				</div>
+				  				<p>为什么要买小苏洁面粉</p>
+				  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+				  			</div>
+			  			</div>
+			  			<div class="content-footer">
+			  				<a href="#" class="time">03-24 14:27</a><a href="#" class="fuzhi">复制供货商微信号</a>
+			  			</div>
+			  		</div>
+		  		</div>
+		  		<!--历史通知-->
+		  		<div class="history-tz">
+			  		<h3><a href="#">历史通知</a></h3>
+			  		<div class="content-text">
+			  			<div class="clear">
+				  			<div class="fl content-img">
+				  				<img src="images/c-1.jpg" width="100" height="100" alt="" />
+				  			</div>
+				  			<div class="fl m-head">
+				  				<div class="content-text-head clear">
+				  					<span class="fl name">布丁面膜5</span>
+				  					<span class="fr time">2015/03/26</span>
+				  				</div>
+				  				<p>为什么要买小苏洁面粉</p>
+				  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+				  			</div>
+			  			</div>
+			  			<div class="content-footer">
+			  				<a href="#" class="time">03-24 14:27</a><a href="#" class="fuzhi">复制供货商微信号</a>
+			  			</div>
+			  		</div>
+			  		<div class="content-text">
+			  			<div class="clear">
+				  			<div class="fl content-img">
+				  				<img src="images/c-1.jpg" width="100" height="100" alt="" />
+				  			</div>
+				  			<div class="fl m-head">
+				  				<div class="content-text-head clear">
+				  					<span class="fl name">布丁面膜5</span>
+				  					<span class="fr time">2015/03/26</span>
+				  				</div>
+				  				<p>为什么要买小苏洁面粉</p>
+				  				<div class="info">布丁好吃！布丁面膜更好用，皮肤干，不用怕，用水果布丁面膜给你的皮肤深深的补充足够的水分。你值得拥有</div>
+				  			</div>
+			  			</div>
+			  			<div class="content-footer">
+			  				<a href="#" class="time">03-24 14:27</a><a href="#" class="fuzhi">复制供货商微信号</a>
+			  			</div>
+			  		</div>
+		  		</div>
+		  		<!--end 历史通知-->
+	  		</div>
+	  		<!--end 断货通知-->
+	  	</div>
+	  	<!--尾部--><div data-role="footer" data-position="fixed">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="index.html" data-icon="home" class="ui-btn-active">主页</a></li>
+                            <li><a href="buttons.html" data-icon="star">运动场馆</a></li>
+                            <li><a href="listviews.html" data-icon="grid">运动商城</a></li>
+                            <li><a href="nav.html" data-icon="search">社区</a></li>
+                            <li><a href="forms.html" data-icon="gear">个人中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+	  	<footer id="footer"> 
+        
+                </footer>
+  	</div> 
         </div>
+        
     </body>
 </html>
